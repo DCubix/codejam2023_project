@@ -61,7 +61,6 @@ void de_mesh_component_render_func(de_scene_t* scene, de_renderer_t* renderer, d
 void de_camera_component_render_func(de_scene_t* scene, de_renderer_t* renderer, de_object_t* object, void* comp);
 void de_script_component_create_func(de_scene_t* scene, de_object_t* object, void* comp);
 void de_script_component_update_func(de_scene_t* scene, de_object_t* object, void* comp, float delta);
-void de_script_component_render_func(de_scene_t* scene, de_renderer_t* renderer, de_object_t* object, void* comp);
 void de_script_component_destroy_func(de_scene_t* scene, de_object_t* object, void* comp);
 
 typedef struct _de_prop_t {

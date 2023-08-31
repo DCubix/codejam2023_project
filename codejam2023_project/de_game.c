@@ -120,7 +120,7 @@ void de_game_start(de_game_t* game) {
     glEnable(GL_DEBUG_OUTPUT_SYNCHRONOUS_ARB);
     glDebugMessageCallbackARB(GLDebugMessageCallback, NULL);
 
-    game->L = de_scripting_init();
+    game->vm = de_scripting_init();
     game->renderer = de_renderer_create();
 
     de_asset_manager_init();
@@ -174,7 +174,7 @@ void de_game_start(de_game_t* game) {
     }
 
     de_renderer_destroy(&game->renderer);
-    de_scripting_destroy(game->L);
+    de_scripting_destroy(game->vm);
     de_asset_manager_free();
     smol_frame_destroy(frame);
 }

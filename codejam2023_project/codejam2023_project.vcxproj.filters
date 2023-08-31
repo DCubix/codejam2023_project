@@ -16,6 +16,9 @@
     <Filter Include="shaders">
       <UniqueIdentifier>{63a12fed-0046-48e7-b47f-2355f5d86228}</UniqueIdentifier>
     </Filter>
+    <Filter Include="build_scripts">
+      <UniqueIdentifier>{6cadd9b5-a775-4309-b4e9-f6ba7272af22}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
@@ -40,6 +43,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="de_scripting.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="external\wren.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -86,6 +92,12 @@
     <ClInclude Include="de_scripting.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="external\wren.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="de_binding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\assets\basic.vert">
@@ -93,6 +105,9 @@
     </None>
     <None Include="..\assets\basic.frag">
       <Filter>shaders</Filter>
+    </None>
+    <None Include="prebuild.py">
+      <Filter>build_scripts</Filter>
     </None>
   </ItemGroup>
 </Project>

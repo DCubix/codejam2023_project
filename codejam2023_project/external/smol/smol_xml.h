@@ -117,7 +117,10 @@ smol_xml_attr_t* smol_xml_get_header_attr(smol_xml_t* xml, const char* attr_name
 
 typedef int (*read_test_cb_t)(char);
 
-typedef struct _smol_scanner_t smol_scanner_t;
+typedef struct _smol_scanner_t {
+	char* buf;
+	size_t ptr, len;
+} smol_scanner_t;
 
 void smol_scanner_init(smol_scanner_t* scanner, const char* data);
 void smol_scanner_skip(smol_scanner_t* scanner);
@@ -143,11 +146,6 @@ typedef struct _smol_xml_node_t {
 	size_t parent;
 	smol_id_vector_t children;
 } smol_xml_node_t;
-
-typedef struct _smol_scanner_t {
-	char* buf;
-	size_t ptr, len;
-} smol_scanner_t;
 
 #define _SMOL_TEST_CB(name, cond) int _smol_test__##name(char c) { return cond; }
 
@@ -361,13 +359,13 @@ smol_xml_t smol_xml_parse(const char* xml) {
 	
 	_smol_xml__parse_node(_smol_xml_global_id++, SMOL_XML_INVALID_ID, &scan, &xml_data.nodes);
 	
-	smol_vector_each(&xml_data.nodes, smol_xml_node_t, node) {
-		printf("%d: %s, children (%d): ", smol_xml_node_get_id(node), smol_xml_node_get_tag(node), smol_vector_count(&node->children));
-		smol_vector_each(&node->children, size_t, id) {
-			printf("%d, ", *id);
-		}
-		printf("\n");
-	}
+	//smol_vector_each(&xml_data.nodes, smol_xml_node_t, node) {
+	//	printf("%d: %s, children (%d): ", smol_xml_node_get_id(node), smol_xml_node_get_tag(node), smol_vector_count(&node->children));
+	//	smol_vector_each(&node->children, size_t, id) {
+	//		printf("%d, ", *id);
+	//	}
+	//	printf("\n");
+	//}
 
 	return xml_data;
 }

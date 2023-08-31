@@ -25,7 +25,7 @@ typedef struct _de_game_t {
 		DE_GAME_STATE_GAMEPLAY
 	} game_state;
 
-	lua_State* L;
+	WrenVM* vm;
 } de_game_t;
 
 void de_game_start(de_game_t* game);

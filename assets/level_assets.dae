@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 3.6.2 commit date:2023-08-16, commit time:16:43, hash:e53e55951e7a</authoring_tool>
     </contributor>
-    <created>2023-08-29T12:39:42</created>
-    <modified>2023-08-29T12:39:42</modified>
+    <created>2023-08-30T23:15:05</created>
+    <modified>2023-08-30T23:15:05</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -313,11 +313,11 @@
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
       <node id="Suzanne" name="Suzanne" type="NODE">
-        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0 0 0 1 0 0 -1 0 0 0 0 0 1</matrix>
         <instance_geometry url="#Suzanne-mesh" name="Suzanne"/>
       </node>
       <node id="building_window_008" name="building_window.008" type="NODE">
-        <matrix sid="transform">-4.37114e-8 1 0 13 -1 -4.37114e-8 0 11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 1 0 13 0 0 1 0 1 4.37114e-8 0 -11 0 0 0 1</matrix>
         <instance_geometry url="#building_window_mesh-mesh" name="building_window.008">
           <bind_material>
             <technique_common>
@@ -329,7 +329,7 @@
         </instance_geometry>
       </node>
       <node id="building_window_007" name="building_window.007" type="NODE">
-        <matrix sid="transform">-4.37114e-8 1 0 13 -1 -4.37114e-8 0 5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 1 0 13 0 0 1 0 1 4.37114e-8 0 -5 0 0 0 1</matrix>
         <instance_geometry url="#building_window_mesh-mesh" name="building_window.007">
           <bind_material>
             <technique_common>
@@ -341,7 +341,7 @@
         </instance_geometry>
       </node>
       <node id="building_window_006" name="building_window.006" type="NODE">
-        <matrix sid="transform">-4.37114e-8 1 0 13 -1 -4.37114e-8 0 -5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 1 0 13 0 0 1 0 1 4.37114e-8 0 5 0 0 0 1</matrix>
         <instance_geometry url="#building_window_mesh-mesh" name="building_window.006">
           <bind_material>
             <technique_common>
@@ -353,7 +353,7 @@
         </instance_geometry>
       </node>
       <node id="building_window_005" name="building_window.005" type="NODE">
-        <matrix sid="transform">-4.37114e-8 1 0 13 -1 -4.37114e-8 0 -11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 1 0 13 0 0 1 0 1 4.37114e-8 0 11 0 0 0 1</matrix>
         <instance_geometry url="#building_window_mesh-mesh" name="building_window.005">
           <bind_material>
             <technique_common>
@@ -365,7 +365,7 @@
         </instance_geometry>
       </node>
       <node id="building_window_004" name="building_window.004" type="NODE">
-        <matrix sid="transform">-4.37114e-8 -1 0 -13 1 -4.37114e-8 0 -11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 -1 0 -13 0 0 1 0 -1 4.37114e-8 0 11 0 0 0 1</matrix>
         <instance_geometry url="#building_window_mesh-mesh" name="building_window.004">
           <bind_material>
             <technique_common>
@@ -377,7 +377,7 @@
         </instance_geometry>
       </node>
       <node id="building_window_003" name="building_window.003" type="NODE">
-        <matrix sid="transform">-4.37114e-8 -1 0 -13 1 -4.37114e-8 0 -5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 -1 0 -13 0 0 1 0 -1 4.37114e-8 0 5 0 0 0 1</matrix>
         <instance_geometry url="#building_window_mesh-mesh" name="building_window.003">
           <bind_material>
             <technique_common>
@@ -389,7 +389,7 @@
         </instance_geometry>
       </node>
       <node id="building_window_002" name="building_window.002" type="NODE">
-        <matrix sid="transform">-4.37114e-8 -1 0 -13 1 -4.37114e-8 0 5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 -1 0 -13 0 0 1 0 -1 4.37114e-8 0 -5 0 0 0 1</matrix>
         <instance_geometry url="#building_window_mesh-mesh" name="building_window.002">
           <bind_material>
             <technique_common>
@@ -401,7 +401,7 @@
         </instance_geometry>
       </node>
       <node id="building_window_001" name="building_window.001" type="NODE">
-        <matrix sid="transform">-4.37114e-8 -1 0 -13 1 -4.37114e-8 0 11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 -1 0 -13 0 0 1 0 -1 4.37114e-8 0 -11 0 0 0 1</matrix>
         <instance_geometry url="#building_window_mesh-mesh" name="building_window.001">
           <bind_material>
             <technique_common>
@@ -413,11 +413,11 @@
         </instance_geometry>
       </node>
       <node id="Camera" name="Camera" type="NODE">
-        <matrix sid="transform">1 0 0 0 0 0.7071068 -0.7071068 -18.18718 0 0.7071068 0.7071068 20.23664 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 0 0 0.7071068 0.7071068 20.23664 0 -0.7071068 0.7071068 18.18718 0 0 0 1</matrix>
         <instance_camera url="#Camera-camera"/>
       </node>
       <node id="building_floor_108" name="building_floor.108" type="NODE">
-        <matrix sid="transform">1 0 0 1 0 1 0 -3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 1 0 0 1 0 0 -1 0 3 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.108">
           <bind_material>
             <technique_common>
@@ -429,7 +429,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_107" name="building_floor.107" type="NODE">
-        <matrix sid="transform">1 0 0 -1 0 1 0 -3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -1 0 0 1 0 0 -1 0 3 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.107">
           <bind_material>
             <technique_common>
@@ -441,7 +441,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_070" name="building_straight.070" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 1 3.25841e-7 -1 0 -13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 1 0 0 1 0 -3.25841e-7 1 0 13 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.070">
           <bind_material>
             <technique_common>
@@ -453,7 +453,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_069" name="building_straight.069" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -1 3.25841e-7 -1 0 -13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -1 0 0 1 0 -3.25841e-7 1 0 13 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.069">
           <bind_material>
             <technique_common>
@@ -465,7 +465,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_106" name="building_floor.106" type="NODE">
-        <matrix sid="transform">1 0 0 1 0 1 0 -11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 1 0 0 1 0 0 -1 0 11 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.106">
           <bind_material>
             <technique_common>
@@ -477,7 +477,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_105" name="building_floor.105" type="NODE">
-        <matrix sid="transform">1 0 0 -1 0 1 0 -11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -1 0 0 1 0 0 -1 0 11 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.105">
           <bind_material>
             <technique_common>
@@ -489,7 +489,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_104" name="building_floor.104" type="NODE">
-        <matrix sid="transform">1 0 0 1 0 1 0 -9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 1 0 0 1 0 0 -1 0 9 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.104">
           <bind_material>
             <technique_common>
@@ -501,7 +501,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_103" name="building_floor.103" type="NODE">
-        <matrix sid="transform">1 0 0 -1 0 1 0 -9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -1 0 0 1 0 0 -1 0 9 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.103">
           <bind_material>
             <technique_common>
@@ -513,7 +513,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_102" name="building_floor.102" type="NODE">
-        <matrix sid="transform">1 0 0 1 0 1 0 -7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 1 0 0 1 0 0 -1 0 7 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.102">
           <bind_material>
             <technique_common>
@@ -525,7 +525,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_101" name="building_floor.101" type="NODE">
-        <matrix sid="transform">1 0 0 -1 0 1 0 -7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -1 0 0 1 0 0 -1 0 7 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.101">
           <bind_material>
             <technique_common>
@@ -537,7 +537,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_100" name="building_floor.100" type="NODE">
-        <matrix sid="transform">1 0 0 1 0 1 0 -5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 1 0 0 1 0 0 -1 0 5 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.100">
           <bind_material>
             <technique_common>
@@ -549,7 +549,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_099" name="building_floor.099" type="NODE">
-        <matrix sid="transform">1 0 0 -1 0 1 0 -5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -1 0 0 1 0 0 -1 0 5 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.099">
           <bind_material>
             <technique_common>
@@ -561,7 +561,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_066" name="building_straight.066" type="NODE">
-        <matrix sid="transform">-4.37114e-8 1 0 13 -1 -4.37114e-8 0 1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 1 0 13 0 0 1 0 1 4.37114e-8 0 -1 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.066">
           <bind_material>
             <technique_common>
@@ -573,7 +573,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_065" name="building_straight.065" type="NODE">
-        <matrix sid="transform">-4.37114e-8 1 0 13 -1 -4.37114e-8 0 -1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 1 0 13 0 0 1 0 1 4.37114e-8 0 1 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.065">
           <bind_material>
             <technique_common>
@@ -585,7 +585,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_064" name="building_straight.064" type="NODE">
-        <matrix sid="transform">-4.37114e-8 -1 0 -13 1 -4.37114e-8 0 -1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 -1 0 -13 0 0 1 0 -1 4.37114e-8 0 1 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.064">
           <bind_material>
             <technique_common>
@@ -597,7 +597,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_063" name="building_straight.063" type="NODE">
-        <matrix sid="transform">-4.37114e-8 -1 0 -13 1 -4.37114e-8 0 1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 -1 0 -13 0 0 1 0 -1 4.37114e-8 0 -1 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.063">
           <bind_material>
             <technique_common>
@@ -609,7 +609,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_098" name="building_floor.098" type="NODE">
-        <matrix sid="transform">1 0 0 11 0 1 0 -1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 11 0 0 1 0 0 -1 0 1 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.098">
           <bind_material>
             <technique_common>
@@ -621,7 +621,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_097" name="building_floor.097" type="NODE">
-        <matrix sid="transform">1 0 0 11 0 1 0 1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 11 0 0 1 0 0 -1 0 -1 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.097">
           <bind_material>
             <technique_common>
@@ -633,7 +633,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_096" name="building_floor.096" type="NODE">
-        <matrix sid="transform">1 0 0 9 0 1 0 -1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 9 0 0 1 0 0 -1 0 1 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.096">
           <bind_material>
             <technique_common>
@@ -645,7 +645,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_095" name="building_floor.095" type="NODE">
-        <matrix sid="transform">1 0 0 9 0 1 0 1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 9 0 0 1 0 0 -1 0 -1 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.095">
           <bind_material>
             <technique_common>
@@ -657,7 +657,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_094" name="building_floor.094" type="NODE">
-        <matrix sid="transform">1 0 0 7 0 1 0 -1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 7 0 0 1 0 0 -1 0 1 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.094">
           <bind_material>
             <technique_common>
@@ -669,7 +669,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_093" name="building_floor.093" type="NODE">
-        <matrix sid="transform">1 0 0 7 0 1 0 1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 7 0 0 1 0 0 -1 0 -1 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.093">
           <bind_material>
             <technique_common>
@@ -681,7 +681,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_092" name="building_floor.092" type="NODE">
-        <matrix sid="transform">1 0 0 5 0 1 0 -1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 5 0 0 1 0 0 -1 0 1 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.092">
           <bind_material>
             <technique_common>
@@ -693,7 +693,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_091" name="building_floor.091" type="NODE">
-        <matrix sid="transform">1 0 0 5 0 1 0 1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 5 0 0 1 0 0 -1 0 -1 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.091">
           <bind_material>
             <technique_common>
@@ -705,7 +705,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_090" name="building_floor.090" type="NODE">
-        <matrix sid="transform">1 0 0 3 0 1 0 -1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 3 0 0 1 0 0 -1 0 1 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.090">
           <bind_material>
             <technique_common>
@@ -717,7 +717,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_089" name="building_floor.089" type="NODE">
-        <matrix sid="transform">1 0 0 3 0 1 0 1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 3 0 0 1 0 0 -1 0 -1 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.089">
           <bind_material>
             <technique_common>
@@ -729,7 +729,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_088" name="building_floor.088" type="NODE">
-        <matrix sid="transform">1 0 0 1 0 1 0 -1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 1 0 0 1 0 0 -1 0 1 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.088">
           <bind_material>
             <technique_common>
@@ -741,7 +741,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_087" name="building_floor.087" type="NODE">
-        <matrix sid="transform">1 0 0 1 0 1 0 1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 1 0 0 1 0 0 -1 0 -1 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.087">
           <bind_material>
             <technique_common>
@@ -753,7 +753,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_086" name="building_floor.086" type="NODE">
-        <matrix sid="transform">1 0 0 -1 0 1 0 -1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.086">
           <bind_material>
             <technique_common>
@@ -765,7 +765,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_085" name="building_floor.085" type="NODE">
-        <matrix sid="transform">1 0 0 -1 0 1 0 1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -1 0 0 1 0 0 -1 0 -1 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.085">
           <bind_material>
             <technique_common>
@@ -777,7 +777,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_084" name="building_floor.084" type="NODE">
-        <matrix sid="transform">1 0 0 -3 0 1 0 -1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -3 0 0 1 0 0 -1 0 1 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.084">
           <bind_material>
             <technique_common>
@@ -789,7 +789,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_083" name="building_floor.083" type="NODE">
-        <matrix sid="transform">1 0 0 -3 0 1 0 1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -3 0 0 1 0 0 -1 0 -1 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.083">
           <bind_material>
             <technique_common>
@@ -801,7 +801,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_082" name="building_floor.082" type="NODE">
-        <matrix sid="transform">1 0 0 -5 0 1 0 -1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -5 0 0 1 0 0 -1 0 1 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.082">
           <bind_material>
             <technique_common>
@@ -813,7 +813,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_081" name="building_floor.081" type="NODE">
-        <matrix sid="transform">1 0 0 -5 0 1 0 1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -5 0 0 1 0 0 -1 0 -1 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.081">
           <bind_material>
             <technique_common>
@@ -825,7 +825,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_080" name="building_floor.080" type="NODE">
-        <matrix sid="transform">1 0 0 -7 0 1 0 -1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -7 0 0 1 0 0 -1 0 1 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.080">
           <bind_material>
             <technique_common>
@@ -837,7 +837,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_079" name="building_floor.079" type="NODE">
-        <matrix sid="transform">1 0 0 -7 0 1 0 1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -7 0 0 1 0 0 -1 0 -1 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.079">
           <bind_material>
             <technique_common>
@@ -849,7 +849,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_078" name="building_floor.078" type="NODE">
-        <matrix sid="transform">1 0 0 -9 0 1 0 -1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -9 0 0 1 0 0 -1 0 1 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.078">
           <bind_material>
             <technique_common>
@@ -861,7 +861,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_077" name="building_floor.077" type="NODE">
-        <matrix sid="transform">1 0 0 -9 0 1 0 1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -9 0 0 1 0 0 -1 0 -1 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.077">
           <bind_material>
             <technique_common>
@@ -873,7 +873,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_076" name="building_floor.076" type="NODE">
-        <matrix sid="transform">1 0 0 -11 0 1 0 -1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -11 0 0 1 0 0 -1 0 1 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.076">
           <bind_material>
             <technique_common>
@@ -885,7 +885,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_075" name="building_floor.075" type="NODE">
-        <matrix sid="transform">1 0 0 -11 0 1 0 1 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -11 0 0 1 0 0 -1 0 -1 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.075">
           <bind_material>
             <technique_common>
@@ -897,7 +897,7 @@
         </instance_geometry>
       </node>
       <node id="building_doorway_004" name="building_doorway.004" type="NODE">
-        <matrix sid="transform">-4.37114e-8 1 0 -3 -1 -4.37114e-8 0 -7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 1 0 -3 0 0 1 0 1 4.37114e-8 0 7 0 0 0 1</matrix>
         <instance_geometry url="#building_doorway_mesh-mesh" name="building_doorway.004">
           <bind_material>
             <technique_common>
@@ -909,7 +909,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_062" name="building_straight.062" type="NODE">
-        <matrix sid="transform">1 -2.38419e-7 0 -11 2.38419e-7 1 0 -3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 -2.38419e-7 0 -11 0 0 1 0 -2.38419e-7 -1 0 3 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.062">
           <bind_material>
             <technique_common>
@@ -921,7 +921,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_061" name="building_straight.061" type="NODE">
-        <matrix sid="transform">1 -2.38419e-7 0 -9 2.38419e-7 1 0 -3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 -2.38419e-7 0 -9 0 0 1 0 -2.38419e-7 -1 0 3 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.061">
           <bind_material>
             <technique_common>
@@ -933,7 +933,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_060" name="building_straight.060" type="NODE">
-        <matrix sid="transform">1 -2.38419e-7 0 -7 2.38419e-7 1 0 -3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 -2.38419e-7 0 -7 0 0 1 0 -2.38419e-7 -1 0 3 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.060">
           <bind_material>
             <technique_common>
@@ -945,7 +945,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_059" name="building_straight.059" type="NODE">
-        <matrix sid="transform">1 -2.38419e-7 0 -5 2.38419e-7 1 0 -3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 -2.38419e-7 0 -5 0 0 1 0 -2.38419e-7 -1 0 3 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.059">
           <bind_material>
             <technique_common>
@@ -957,7 +957,7 @@
         </instance_geometry>
       </node>
       <node id="building_corner_016" name="building_corner.016" type="NODE">
-        <matrix sid="transform">1 -2.38419e-7 0 -13 2.38419e-7 1 0 -3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 -2.38419e-7 0 -13 0 0 1 0 -2.38419e-7 -1 0 3 0 0 0 1</matrix>
         <instance_geometry url="#building_corner_mesh-mesh" name="building_corner.016">
           <bind_material>
             <technique_common>
@@ -969,7 +969,7 @@
         </instance_geometry>
       </node>
       <node id="building_corner_015" name="building_corner.015" type="NODE">
-        <matrix sid="transform">1.94707e-7 1 0 -3 -1 1.94707e-7 0 -3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1.94707e-7 1 0 -3 0 0 1 0 1 -1.94707e-7 0 3 0 0 0 1</matrix>
         <instance_geometry url="#building_corner_mesh-mesh" name="building_corner.015">
           <bind_material>
             <technique_common>
@@ -981,7 +981,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_074" name="building_floor.074" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -11 3.25841e-7 -1 0 -5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -11 0 0 1 0 -3.25841e-7 1 0 5 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.074">
           <bind_material>
             <technique_common>
@@ -993,7 +993,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_073" name="building_floor.073" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -9 3.25841e-7 -1 0 -5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -9 0 0 1 0 -3.25841e-7 1 0 5 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.073">
           <bind_material>
             <technique_common>
@@ -1005,7 +1005,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_072" name="building_floor.072" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -7 3.25841e-7 -1 0 -5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -7 0 0 1 0 -3.25841e-7 1 0 5 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.072">
           <bind_material>
             <technique_common>
@@ -1017,7 +1017,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_071" name="building_floor.071" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -5 3.25841e-7 -1 0 -5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -5 0 0 1 0 -3.25841e-7 1 0 5 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.071">
           <bind_material>
             <technique_common>
@@ -1029,7 +1029,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_057" name="building_straight.057" type="NODE">
-        <matrix sid="transform">-4.37114e-8 1 0 -3 -1 -4.37114e-8 0 -5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 1 0 -3 0 0 1 0 1 4.37114e-8 0 5 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.057">
           <bind_material>
             <technique_common>
@@ -1041,7 +1041,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_070" name="building_floor.070" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -11 3.25841e-7 -1 0 -7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -11 0 0 1 0 -3.25841e-7 1 0 7 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.070">
           <bind_material>
             <technique_common>
@@ -1053,7 +1053,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_069" name="building_floor.069" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -9 3.25841e-7 -1 0 -7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -9 0 0 1 0 -3.25841e-7 1 0 7 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.069">
           <bind_material>
             <technique_common>
@@ -1065,7 +1065,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_068" name="building_floor.068" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -7 3.25841e-7 -1 0 -7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -7 0 0 1 0 -3.25841e-7 1 0 7 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.068">
           <bind_material>
             <technique_common>
@@ -1077,7 +1077,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_067" name="building_floor.067" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -5 3.25841e-7 -1 0 -7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -5 0 0 1 0 -3.25841e-7 1 0 7 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.067">
           <bind_material>
             <technique_common>
@@ -1089,7 +1089,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_056" name="building_straight.056" type="NODE">
-        <matrix sid="transform">1.19249e-8 -1 0 -13 1 1.19249e-8 0 -7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1.19249e-8 -1 0 -13 0 0 1 0 -1 -1.19249e-8 0 7 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.056">
           <bind_material>
             <technique_common>
@@ -1101,7 +1101,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_055" name="building_straight.055" type="NODE">
-        <matrix sid="transform">-4.37114e-8 1 0 -3 -1 -4.37114e-8 0 -9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 1 0 -3 0 0 1 0 1 4.37114e-8 0 9 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.055">
           <bind_material>
             <technique_common>
@@ -1113,7 +1113,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_066" name="building_floor.066" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -11 3.25841e-7 -1 0 -9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -11 0 0 1 0 -3.25841e-7 1 0 9 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.066">
           <bind_material>
             <technique_common>
@@ -1125,7 +1125,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_065" name="building_floor.065" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -9 3.25841e-7 -1 0 -9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -9 0 0 1 0 -3.25841e-7 1 0 9 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.065">
           <bind_material>
             <technique_common>
@@ -1137,7 +1137,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_064" name="building_floor.064" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -7 3.25841e-7 -1 0 -9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -7 0 0 1 0 -3.25841e-7 1 0 9 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.064">
           <bind_material>
             <technique_common>
@@ -1149,7 +1149,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_063" name="building_floor.063" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -5 3.25841e-7 -1 0 -9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -5 0 0 1 0 -3.25841e-7 1 0 9 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.063">
           <bind_material>
             <technique_common>
@@ -1161,7 +1161,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_054" name="building_straight.054" type="NODE">
-        <matrix sid="transform">1.19249e-8 -1 0 -13 1 1.19249e-8 0 -9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1.19249e-8 -1 0 -13 0 0 1 0 -1 -1.19249e-8 0 9 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.054">
           <bind_material>
             <technique_common>
@@ -1173,7 +1173,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_062" name="building_floor.062" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -11 3.25841e-7 -1 0 -11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -11 0 0 1 0 -3.25841e-7 1 0 11 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.062">
           <bind_material>
             <technique_common>
@@ -1185,7 +1185,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_061" name="building_floor.061" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -9 3.25841e-7 -1 0 -11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -9 0 0 1 0 -3.25841e-7 1 0 11 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.061">
           <bind_material>
             <technique_common>
@@ -1197,7 +1197,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_060" name="building_floor.060" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -7 3.25841e-7 -1 0 -11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -7 0 0 1 0 -3.25841e-7 1 0 11 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.060">
           <bind_material>
             <technique_common>
@@ -1209,7 +1209,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_059" name="building_floor.059" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -5 3.25841e-7 -1 0 -11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -5 0 0 1 0 -3.25841e-7 1 0 11 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.059">
           <bind_material>
             <technique_common>
@@ -1221,7 +1221,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_052" name="building_straight.052" type="NODE">
-        <matrix sid="transform">-4.37114e-8 1 0 -3 -1 -4.37114e-8 0 -11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 1 0 -3 0 0 1 0 1 4.37114e-8 0 11 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.052">
           <bind_material>
             <technique_common>
@@ -1233,7 +1233,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_051" name="building_straight.051" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -11 3.25841e-7 -1 0 -13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -11 0 0 1 0 -3.25841e-7 1 0 13 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.051">
           <bind_material>
             <technique_common>
@@ -1245,7 +1245,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_050" name="building_straight.050" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -9 3.25841e-7 -1 0 -13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -9 0 0 1 0 -3.25841e-7 1 0 13 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.050">
           <bind_material>
             <technique_common>
@@ -1257,7 +1257,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_049" name="building_straight.049" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -7 3.25841e-7 -1 0 -13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -7 0 0 1 0 -3.25841e-7 1 0 13 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.049">
           <bind_material>
             <technique_common>
@@ -1269,7 +1269,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_048" name="building_straight.048" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -5 3.25841e-7 -1 0 -13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -5 0 0 1 0 -3.25841e-7 1 0 13 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.048">
           <bind_material>
             <technique_common>
@@ -1281,7 +1281,7 @@
         </instance_geometry>
       </node>
       <node id="building_corner_014" name="building_corner.014" type="NODE">
-        <matrix sid="transform">1.19249e-8 -1 0 -13 1 1.19249e-8 0 -13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1.19249e-8 -1 0 -13 0 0 1 0 -1 -1.19249e-8 0 13 0 0 0 1</matrix>
         <instance_geometry url="#building_corner_mesh-mesh" name="building_corner.014">
           <bind_material>
             <technique_common>
@@ -1293,7 +1293,7 @@
         </instance_geometry>
       </node>
       <node id="building_corner_013" name="building_corner.013" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -3 3.25841e-7 -1 0 -13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -3 0 0 1 0 -3.25841e-7 1 0 13 0 0 0 1</matrix>
         <instance_geometry url="#building_corner_mesh-mesh" name="building_corner.013">
           <bind_material>
             <technique_common>
@@ -1305,7 +1305,7 @@
         </instance_geometry>
       </node>
       <node id="building_doorway_003" name="building_doorway.003" type="NODE">
-        <matrix sid="transform">-4.37114e-8 -1 0 3 1 -4.37114e-8 0 -7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 -1 0 3 0 0 1 0 -1 4.37114e-8 0 7 0 0 0 1</matrix>
         <instance_geometry url="#building_doorway_mesh-mesh" name="building_doorway.003">
           <bind_material>
             <technique_common>
@@ -1317,7 +1317,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_047" name="building_straight.047" type="NODE">
-        <matrix sid="transform">-1 3.25841e-7 0 11 -3.25841e-7 -1 0 -13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 3.25841e-7 0 11 0 0 1 0 3.25841e-7 1 0 13 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.047">
           <bind_material>
             <technique_common>
@@ -1329,7 +1329,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_046" name="building_straight.046" type="NODE">
-        <matrix sid="transform">-1 3.25841e-7 0 9 -3.25841e-7 -1 0 -13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 3.25841e-7 0 9 0 0 1 0 3.25841e-7 1 0 13 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.046">
           <bind_material>
             <technique_common>
@@ -1341,7 +1341,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_045" name="building_straight.045" type="NODE">
-        <matrix sid="transform">-1 3.25841e-7 0 7 -3.25841e-7 -1 0 -13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 3.25841e-7 0 7 0 0 1 0 3.25841e-7 1 0 13 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.045">
           <bind_material>
             <technique_common>
@@ -1353,7 +1353,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_044" name="building_straight.044" type="NODE">
-        <matrix sid="transform">-1 3.25841e-7 0 5 -3.25841e-7 -1 0 -13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 3.25841e-7 0 5 0 0 1 0 3.25841e-7 1 0 13 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.044">
           <bind_material>
             <technique_common>
@@ -1365,7 +1365,7 @@
         </instance_geometry>
       </node>
       <node id="building_corner_012" name="building_corner.012" type="NODE">
-        <matrix sid="transform">-1 3.25841e-7 0 13 -3.25841e-7 -1 0 -13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 3.25841e-7 0 13 0 0 1 0 3.25841e-7 1 0 13 0 0 0 1</matrix>
         <instance_geometry url="#building_corner_mesh-mesh" name="building_corner.012">
           <bind_material>
             <technique_common>
@@ -1377,7 +1377,7 @@
         </instance_geometry>
       </node>
       <node id="building_corner_011" name="building_corner.011" type="NODE">
-        <matrix sid="transform">-2.8213e-7 -1 0 3 1 -2.8213e-7 0 -13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-2.8213e-7 -1 0 3 0 0 1 0 -1 2.8213e-7 0 13 0 0 0 1</matrix>
         <instance_geometry url="#building_corner_mesh-mesh" name="building_corner.011">
           <bind_material>
             <technique_common>
@@ -1389,7 +1389,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_058" name="building_floor.058" type="NODE">
-        <matrix sid="transform">1 0 0 11 0 1 0 -11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 11 0 0 1 0 0 -1 0 11 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.058">
           <bind_material>
             <technique_common>
@@ -1401,7 +1401,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_057" name="building_floor.057" type="NODE">
-        <matrix sid="transform">1 0 0 9 0 1 0 -11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 9 0 0 1 0 0 -1 0 11 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.057">
           <bind_material>
             <technique_common>
@@ -1413,7 +1413,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_056" name="building_floor.056" type="NODE">
-        <matrix sid="transform">1 0 0 7 0 1 0 -11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 7 0 0 1 0 0 -1 0 11 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.056">
           <bind_material>
             <technique_common>
@@ -1425,7 +1425,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_055" name="building_floor.055" type="NODE">
-        <matrix sid="transform">1 0 0 5 0 1 0 -11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 5 0 0 1 0 0 -1 0 11 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.055">
           <bind_material>
             <technique_common>
@@ -1437,7 +1437,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_042" name="building_straight.042" type="NODE">
-        <matrix sid="transform">-4.37114e-8 -1 0 3 1 -4.37114e-8 0 -11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 -1 0 3 0 0 1 0 -1 4.37114e-8 0 11 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.042">
           <bind_material>
             <technique_common>
@@ -1449,7 +1449,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_054" name="building_floor.054" type="NODE">
-        <matrix sid="transform">1 0 0 11 0 1 0 -9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 11 0 0 1 0 0 -1 0 9 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.054">
           <bind_material>
             <technique_common>
@@ -1461,7 +1461,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_053" name="building_floor.053" type="NODE">
-        <matrix sid="transform">1 0 0 9 0 1 0 -9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 9 0 0 1 0 0 -1 0 9 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.053">
           <bind_material>
             <technique_common>
@@ -1473,7 +1473,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_052" name="building_floor.052" type="NODE">
-        <matrix sid="transform">1 0 0 7 0 1 0 -9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 7 0 0 1 0 0 -1 0 9 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.052">
           <bind_material>
             <technique_common>
@@ -1485,7 +1485,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_051" name="building_floor.051" type="NODE">
-        <matrix sid="transform">1 0 0 5 0 1 0 -9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 5 0 0 1 0 0 -1 0 9 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.051">
           <bind_material>
             <technique_common>
@@ -1497,7 +1497,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_041" name="building_straight.041" type="NODE">
-        <matrix sid="transform">-4.37114e-8 1 0 13 -1 -4.37114e-8 0 -9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 1 0 13 0 0 1 0 1 4.37114e-8 0 9 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.041">
           <bind_material>
             <technique_common>
@@ -1509,7 +1509,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_040" name="building_straight.040" type="NODE">
-        <matrix sid="transform">-4.37114e-8 -1 0 3 1 -4.37114e-8 0 -9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 -1 0 3 0 0 1 0 -1 4.37114e-8 0 9 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.040">
           <bind_material>
             <technique_common>
@@ -1521,7 +1521,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_050" name="building_floor.050" type="NODE">
-        <matrix sid="transform">1 0 0 11 0 1 0 -7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 11 0 0 1 0 0 -1 0 7 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.050">
           <bind_material>
             <technique_common>
@@ -1533,7 +1533,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_049" name="building_floor.049" type="NODE">
-        <matrix sid="transform">1 0 0 9 0 1 0 -7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 9 0 0 1 0 0 -1 0 7 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.049">
           <bind_material>
             <technique_common>
@@ -1545,7 +1545,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_048" name="building_floor.048" type="NODE">
-        <matrix sid="transform">1 0 0 7 0 1 0 -7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 7 0 0 1 0 0 -1 0 7 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.048">
           <bind_material>
             <technique_common>
@@ -1557,7 +1557,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_047" name="building_floor.047" type="NODE">
-        <matrix sid="transform">1 0 0 5 0 1 0 -7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 5 0 0 1 0 0 -1 0 7 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.047">
           <bind_material>
             <technique_common>
@@ -1569,7 +1569,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_039" name="building_straight.039" type="NODE">
-        <matrix sid="transform">-4.37114e-8 1 0 13 -1 -4.37114e-8 0 -7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 1 0 13 0 0 1 0 1 4.37114e-8 0 7 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.039">
           <bind_material>
             <technique_common>
@@ -1581,7 +1581,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_046" name="building_floor.046" type="NODE">
-        <matrix sid="transform">1 0 0 11 0 1 0 -5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 11 0 0 1 0 0 -1 0 5 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.046">
           <bind_material>
             <technique_common>
@@ -1593,7 +1593,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_045" name="building_floor.045" type="NODE">
-        <matrix sid="transform">1 0 0 9 0 1 0 -5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 9 0 0 1 0 0 -1 0 5 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.045">
           <bind_material>
             <technique_common>
@@ -1605,7 +1605,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_044" name="building_floor.044" type="NODE">
-        <matrix sid="transform">1 0 0 7 0 1 0 -5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 7 0 0 1 0 0 -1 0 5 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.044">
           <bind_material>
             <technique_common>
@@ -1617,7 +1617,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_043" name="building_floor.043" type="NODE">
-        <matrix sid="transform">1 0 0 5 0 1 0 -5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 5 0 0 1 0 0 -1 0 5 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.043">
           <bind_material>
             <technique_common>
@@ -1629,7 +1629,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_037" name="building_straight.037" type="NODE">
-        <matrix sid="transform">-4.37114e-8 -1 0 3 1 -4.37114e-8 0 -5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 -1 0 3 0 0 1 0 -1 4.37114e-8 0 5 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.037">
           <bind_material>
             <technique_common>
@@ -1641,7 +1641,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_036" name="building_straight.036" type="NODE">
-        <matrix sid="transform">1 0 0 11 0 1 0 -3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 11 0 0 1 0 0 -1 0 3 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.036">
           <bind_material>
             <technique_common>
@@ -1653,7 +1653,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_035" name="building_straight.035" type="NODE">
-        <matrix sid="transform">1 0 0 9 0 1 0 -3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 9 0 0 1 0 0 -1 0 3 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.035">
           <bind_material>
             <technique_common>
@@ -1665,7 +1665,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_034" name="building_straight.034" type="NODE">
-        <matrix sid="transform">1 0 0 7 0 1 0 -3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 7 0 0 1 0 0 -1 0 3 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.034">
           <bind_material>
             <technique_common>
@@ -1677,7 +1677,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_033" name="building_straight.033" type="NODE">
-        <matrix sid="transform">1 0 0 5 0 1 0 -3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 5 0 0 1 0 0 -1 0 3 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.033">
           <bind_material>
             <technique_common>
@@ -1689,7 +1689,7 @@
         </instance_geometry>
       </node>
       <node id="building_corner_010" name="building_corner.010" type="NODE">
-        <matrix sid="transform">-4.37114e-8 1 0 13 -1 -4.37114e-8 0 -3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 1 0 13 0 0 1 0 1 4.37114e-8 0 3 0 0 0 1</matrix>
         <instance_geometry url="#building_corner_mesh-mesh" name="building_corner.010">
           <bind_material>
             <technique_common>
@@ -1701,7 +1701,7 @@
         </instance_geometry>
       </node>
       <node id="building_corner_009" name="building_corner.009" type="NODE">
-        <matrix sid="transform">1 0 0 3 0 1 0 -3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 3 0 0 1 0 0 -1 0 3 0 0 0 1</matrix>
         <instance_geometry url="#building_corner_mesh-mesh" name="building_corner.009">
           <bind_material>
             <technique_common>
@@ -1713,7 +1713,7 @@
         </instance_geometry>
       </node>
       <node id="building_doorway_002" name="building_doorway.002" type="NODE">
-        <matrix sid="transform">-4.37114e-8 1 0 -3 -1 -4.37114e-8 0 9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 1 0 -3 0 0 1 0 1 4.37114e-8 0 -9 0 0 0 1</matrix>
         <instance_geometry url="#building_doorway_mesh-mesh" name="building_doorway.002">
           <bind_material>
             <technique_common>
@@ -1725,7 +1725,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_032" name="building_straight.032" type="NODE">
-        <matrix sid="transform">1 -2.38419e-7 0 -11 2.38419e-7 1 0 13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 -2.38419e-7 0 -11 0 0 1 0 -2.38419e-7 -1 0 -13 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.032">
           <bind_material>
             <technique_common>
@@ -1737,7 +1737,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_031" name="building_straight.031" type="NODE">
-        <matrix sid="transform">1 -2.38419e-7 0 -9 2.38419e-7 1 0 13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 -2.38419e-7 0 -9 0 0 1 0 -2.38419e-7 -1 0 -13 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.031">
           <bind_material>
             <technique_common>
@@ -1749,7 +1749,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_030" name="building_straight.030" type="NODE">
-        <matrix sid="transform">1 -2.38419e-7 0 -7 2.38419e-7 1 0 13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 -2.38419e-7 0 -7 0 0 1 0 -2.38419e-7 -1 0 -13 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.030">
           <bind_material>
             <technique_common>
@@ -1761,7 +1761,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_029" name="building_straight.029" type="NODE">
-        <matrix sid="transform">1 -2.38419e-7 0 -5 2.38419e-7 1 0 13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 -2.38419e-7 0 -5 0 0 1 0 -2.38419e-7 -1 0 -13 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.029">
           <bind_material>
             <technique_common>
@@ -1773,7 +1773,7 @@
         </instance_geometry>
       </node>
       <node id="building_corner_008" name="building_corner.008" type="NODE">
-        <matrix sid="transform">1 -2.38419e-7 0 -13 2.38419e-7 1 0 13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 -2.38419e-7 0 -13 0 0 1 0 -2.38419e-7 -1 0 -13 0 0 0 1</matrix>
         <instance_geometry url="#building_corner_mesh-mesh" name="building_corner.008">
           <bind_material>
             <technique_common>
@@ -1785,7 +1785,7 @@
         </instance_geometry>
       </node>
       <node id="building_corner_007" name="building_corner.007" type="NODE">
-        <matrix sid="transform">1.94707e-7 1 0 -3 -1 1.94707e-7 0 13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1.94707e-7 1 0 -3 0 0 1 0 1 -1.94707e-7 0 -13 0 0 0 1</matrix>
         <instance_geometry url="#building_corner_mesh-mesh" name="building_corner.007">
           <bind_material>
             <technique_common>
@@ -1797,7 +1797,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_042" name="building_floor.042" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -11 3.25841e-7 -1 0 11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -11 0 0 1 0 -3.25841e-7 1 0 -11 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.042">
           <bind_material>
             <technique_common>
@@ -1809,7 +1809,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_041" name="building_floor.041" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -9 3.25841e-7 -1 0 11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -9 0 0 1 0 -3.25841e-7 1 0 -11 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.041">
           <bind_material>
             <technique_common>
@@ -1821,7 +1821,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_040" name="building_floor.040" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -7 3.25841e-7 -1 0 11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -7 0 0 1 0 -3.25841e-7 1 0 -11 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.040">
           <bind_material>
             <technique_common>
@@ -1833,7 +1833,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_039" name="building_floor.039" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -5 3.25841e-7 -1 0 11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -5 0 0 1 0 -3.25841e-7 1 0 -11 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.039">
           <bind_material>
             <technique_common>
@@ -1845,7 +1845,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_027" name="building_straight.027" type="NODE">
-        <matrix sid="transform">-4.37114e-8 1 0 -3 -1 -4.37114e-8 0 11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 1 0 -3 0 0 1 0 1 4.37114e-8 0 -11 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.027">
           <bind_material>
             <technique_common>
@@ -1857,7 +1857,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_038" name="building_floor.038" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -11 3.25841e-7 -1 0 9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -11 0 0 1 0 -3.25841e-7 1 0 -9 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.038">
           <bind_material>
             <technique_common>
@@ -1869,7 +1869,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_037" name="building_floor.037" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -9 3.25841e-7 -1 0 9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -9 0 0 1 0 -3.25841e-7 1 0 -9 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.037">
           <bind_material>
             <technique_common>
@@ -1881,7 +1881,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_036" name="building_floor.036" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -7 3.25841e-7 -1 0 9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -7 0 0 1 0 -3.25841e-7 1 0 -9 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.036">
           <bind_material>
             <technique_common>
@@ -1893,7 +1893,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_035" name="building_floor.035" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -5 3.25841e-7 -1 0 9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -5 0 0 1 0 -3.25841e-7 1 0 -9 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.035">
           <bind_material>
             <technique_common>
@@ -1905,7 +1905,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_026" name="building_straight.026" type="NODE">
-        <matrix sid="transform">1.19249e-8 -1 0 -13 1 1.19249e-8 0 9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1.19249e-8 -1 0 -13 0 0 1 0 -1 -1.19249e-8 0 -9 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.026">
           <bind_material>
             <technique_common>
@@ -1917,7 +1917,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_025" name="building_straight.025" type="NODE">
-        <matrix sid="transform">-4.37114e-8 1 0 -3 -1 -4.37114e-8 0 7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 1 0 -3 0 0 1 0 1 4.37114e-8 0 -7 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.025">
           <bind_material>
             <technique_common>
@@ -1929,7 +1929,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_034" name="building_floor.034" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -11 3.25841e-7 -1 0 7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -11 0 0 1 0 -3.25841e-7 1 0 -7 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.034">
           <bind_material>
             <technique_common>
@@ -1941,7 +1941,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_033" name="building_floor.033" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -9 3.25841e-7 -1 0 7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -9 0 0 1 0 -3.25841e-7 1 0 -7 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.033">
           <bind_material>
             <technique_common>
@@ -1953,7 +1953,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_032" name="building_floor.032" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -7 3.25841e-7 -1 0 7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -7 0 0 1 0 -3.25841e-7 1 0 -7 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.032">
           <bind_material>
             <technique_common>
@@ -1965,7 +1965,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_031" name="building_floor.031" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -5 3.25841e-7 -1 0 7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -5 0 0 1 0 -3.25841e-7 1 0 -7 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.031">
           <bind_material>
             <technique_common>
@@ -1977,7 +1977,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_024" name="building_straight.024" type="NODE">
-        <matrix sid="transform">1.19249e-8 -1 0 -13 1 1.19249e-8 0 7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1.19249e-8 -1 0 -13 0 0 1 0 -1 -1.19249e-8 0 -7 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.024">
           <bind_material>
             <technique_common>
@@ -1989,7 +1989,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_030" name="building_floor.030" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -11 3.25841e-7 -1 0 5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -11 0 0 1 0 -3.25841e-7 1 0 -5 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.030">
           <bind_material>
             <technique_common>
@@ -2001,7 +2001,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_029" name="building_floor.029" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -9 3.25841e-7 -1 0 5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -9 0 0 1 0 -3.25841e-7 1 0 -5 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.029">
           <bind_material>
             <technique_common>
@@ -2013,7 +2013,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_028" name="building_floor.028" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -7 3.25841e-7 -1 0 5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -7 0 0 1 0 -3.25841e-7 1 0 -5 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.028">
           <bind_material>
             <technique_common>
@@ -2025,7 +2025,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_027" name="building_floor.027" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -5 3.25841e-7 -1 0 5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -5 0 0 1 0 -3.25841e-7 1 0 -5 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.027">
           <bind_material>
             <technique_common>
@@ -2037,7 +2037,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_022" name="building_straight.022" type="NODE">
-        <matrix sid="transform">-4.37114e-8 1 0 -3 -1 -4.37114e-8 0 5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 1 0 -3 0 0 1 0 1 4.37114e-8 0 -5 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.022">
           <bind_material>
             <technique_common>
@@ -2049,7 +2049,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_021" name="building_straight.021" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -11 3.25841e-7 -1 0 3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -11 0 0 1 0 -3.25841e-7 1 0 -3 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.021">
           <bind_material>
             <technique_common>
@@ -2061,7 +2061,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_020" name="building_straight.020" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -9 3.25841e-7 -1 0 3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -9 0 0 1 0 -3.25841e-7 1 0 -3 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.020">
           <bind_material>
             <technique_common>
@@ -2073,7 +2073,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_019" name="building_straight.019" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -7 3.25841e-7 -1 0 3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -7 0 0 1 0 -3.25841e-7 1 0 -3 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.019">
           <bind_material>
             <technique_common>
@@ -2085,7 +2085,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_018" name="building_straight.018" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -5 3.25841e-7 -1 0 3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -5 0 0 1 0 -3.25841e-7 1 0 -3 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.018">
           <bind_material>
             <technique_common>
@@ -2097,7 +2097,7 @@
         </instance_geometry>
       </node>
       <node id="building_corner_006" name="building_corner.006" type="NODE">
-        <matrix sid="transform">1.19249e-8 -1 0 -13 1 1.19249e-8 0 3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1.19249e-8 -1 0 -13 0 0 1 0 -1 -1.19249e-8 0 -3 0 0 0 1</matrix>
         <instance_geometry url="#building_corner_mesh-mesh" name="building_corner.006">
           <bind_material>
             <technique_common>
@@ -2109,7 +2109,7 @@
         </instance_geometry>
       </node>
       <node id="building_corner_005" name="building_corner.005" type="NODE">
-        <matrix sid="transform">-1 -3.25841e-7 0 -3 3.25841e-7 -1 0 3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 -3.25841e-7 0 -3 0 0 1 0 -3.25841e-7 1 0 -3 0 0 0 1</matrix>
         <instance_geometry url="#building_corner_mesh-mesh" name="building_corner.005">
           <bind_material>
             <technique_common>
@@ -2121,7 +2121,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_026" name="building_floor.026" type="NODE">
-        <matrix sid="transform">1 0 0 1 0 1 0 3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 1 0 0 1 0 0 -1 0 -3 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.026">
           <bind_material>
             <technique_common>
@@ -2133,7 +2133,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_025" name="building_floor.025" type="NODE">
-        <matrix sid="transform">1 0 0 -1 0 1 0 3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -1 0 0 1 0 0 -1 0 -3 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.025">
           <bind_material>
             <technique_common>
@@ -2145,7 +2145,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_024" name="building_floor.024" type="NODE">
-        <matrix sid="transform">1 0 0 1 0 1 0 5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 1 0 0 1 0 0 -1 0 -5 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.024">
           <bind_material>
             <technique_common>
@@ -2157,7 +2157,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_023" name="building_floor.023" type="NODE">
-        <matrix sid="transform">1 0 0 -1 0 1 0 5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -1 0 0 1 0 0 -1 0 -5 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.023">
           <bind_material>
             <technique_common>
@@ -2169,7 +2169,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_022" name="building_floor.022" type="NODE">
-        <matrix sid="transform">1 0 0 1 0 1 0 7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 1 0 0 1 0 0 -1 0 -7 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.022">
           <bind_material>
             <technique_common>
@@ -2181,7 +2181,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_021" name="building_floor.021" type="NODE">
-        <matrix sid="transform">1 0 0 -1 0 1 0 7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -1 0 0 1 0 0 -1 0 -7 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.021">
           <bind_material>
             <technique_common>
@@ -2193,7 +2193,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_020" name="building_floor.020" type="NODE">
-        <matrix sid="transform">1 0 0 1 0 1 0 9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 1 0 0 1 0 0 -1 0 -9 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.020">
           <bind_material>
             <technique_common>
@@ -2205,7 +2205,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_019" name="building_floor.019" type="NODE">
-        <matrix sid="transform">1 0 0 -1 0 1 0 9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -1 0 0 1 0 0 -1 0 -9 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.019">
           <bind_material>
             <technique_common>
@@ -2217,7 +2217,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_018" name="building_floor.018" type="NODE">
-        <matrix sid="transform">1 0 0 1 0 1 0 11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 1 0 0 1 0 0 -1 0 -11 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.018">
           <bind_material>
             <technique_common>
@@ -2229,7 +2229,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_017" name="building_floor.017" type="NODE">
-        <matrix sid="transform">1 0 0 -1 0 1 0 11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -1 0 0 1 0 0 -1 0 -11 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.017">
           <bind_material>
             <technique_common>
@@ -2241,7 +2241,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_017" name="building_straight.017" type="NODE">
-        <matrix sid="transform">1 0 0 -1 0 1 0 13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 -1 0 0 1 0 0 -1 0 -13 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.017">
           <bind_material>
             <technique_common>
@@ -2253,7 +2253,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_007" name="building_straight.007" type="NODE">
-        <matrix sid="transform">1 0 0 1 0 1 0 13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 1 0 0 1 0 0 -1 0 -13 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.007">
           <bind_material>
             <technique_common>
@@ -2265,7 +2265,7 @@
         </instance_geometry>
       </node>
       <node id="building_doorway_001" name="building_doorway.001" type="NODE">
-        <matrix sid="transform">-4.37114e-8 -1 0 3 1 -4.37114e-8 0 9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 -1 0 3 0 0 1 0 -1 4.37114e-8 0 -9 0 0 0 1</matrix>
         <instance_geometry url="#building_doorway_mesh-mesh" name="building_doorway.001">
           <bind_material>
             <technique_common>
@@ -2277,7 +2277,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_016" name="building_straight.016" type="NODE">
-        <matrix sid="transform">-1 3.25841e-7 0 11 -3.25841e-7 -1 0 3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 3.25841e-7 0 11 0 0 1 0 3.25841e-7 1 0 -3 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.016">
           <bind_material>
             <technique_common>
@@ -2289,7 +2289,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_015" name="building_straight.015" type="NODE">
-        <matrix sid="transform">-1 3.25841e-7 0 9 -3.25841e-7 -1 0 3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 3.25841e-7 0 9 0 0 1 0 3.25841e-7 1 0 -3 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.015">
           <bind_material>
             <technique_common>
@@ -2301,7 +2301,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_014" name="building_straight.014" type="NODE">
-        <matrix sid="transform">-1 3.25841e-7 0 7 -3.25841e-7 -1 0 3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 3.25841e-7 0 7 0 0 1 0 3.25841e-7 1 0 -3 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.014">
           <bind_material>
             <technique_common>
@@ -2313,7 +2313,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_013" name="building_straight.013" type="NODE">
-        <matrix sid="transform">-1 3.25841e-7 0 5 -3.25841e-7 -1 0 3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 3.25841e-7 0 5 0 0 1 0 3.25841e-7 1 0 -3 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.013">
           <bind_material>
             <technique_common>
@@ -2325,7 +2325,7 @@
         </instance_geometry>
       </node>
       <node id="building_corner_004" name="building_corner.004" type="NODE">
-        <matrix sid="transform">-1 3.25841e-7 0 13 -3.25841e-7 -1 0 3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-1 3.25841e-7 0 13 0 0 1 0 3.25841e-7 1 0 -3 0 0 0 1</matrix>
         <instance_geometry url="#building_corner_mesh-mesh" name="building_corner.004">
           <bind_material>
             <technique_common>
@@ -2337,7 +2337,7 @@
         </instance_geometry>
       </node>
       <node id="building_corner_003" name="building_corner.003" type="NODE">
-        <matrix sid="transform">-2.8213e-7 -1 0 3 1 -2.8213e-7 0 3 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-2.8213e-7 -1 0 3 0 0 1 0 -1 2.8213e-7 0 -3 0 0 0 1</matrix>
         <instance_geometry url="#building_corner_mesh-mesh" name="building_corner.003">
           <bind_material>
             <technique_common>
@@ -2349,7 +2349,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_016" name="building_floor.016" type="NODE">
-        <matrix sid="transform">1 0 0 11 0 1 0 5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 11 0 0 1 0 0 -1 0 -5 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.016">
           <bind_material>
             <technique_common>
@@ -2361,7 +2361,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_015" name="building_floor.015" type="NODE">
-        <matrix sid="transform">1 0 0 9 0 1 0 5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 9 0 0 1 0 0 -1 0 -5 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.015">
           <bind_material>
             <technique_common>
@@ -2373,7 +2373,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_014" name="building_floor.014" type="NODE">
-        <matrix sid="transform">1 0 0 7 0 1 0 5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 7 0 0 1 0 0 -1 0 -5 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.014">
           <bind_material>
             <technique_common>
@@ -2385,7 +2385,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_013" name="building_floor.013" type="NODE">
-        <matrix sid="transform">1 0 0 5 0 1 0 5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 5 0 0 1 0 0 -1 0 -5 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.013">
           <bind_material>
             <technique_common>
@@ -2397,7 +2397,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_011" name="building_straight.011" type="NODE">
-        <matrix sid="transform">-4.37114e-8 -1 0 3 1 -4.37114e-8 0 5 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 -1 0 3 0 0 1 0 -1 4.37114e-8 0 -5 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.011">
           <bind_material>
             <technique_common>
@@ -2409,7 +2409,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_012" name="building_floor.012" type="NODE">
-        <matrix sid="transform">1 0 0 11 0 1 0 7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 11 0 0 1 0 0 -1 0 -7 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.012">
           <bind_material>
             <technique_common>
@@ -2421,7 +2421,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_011" name="building_floor.011" type="NODE">
-        <matrix sid="transform">1 0 0 9 0 1 0 7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 9 0 0 1 0 0 -1 0 -7 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.011">
           <bind_material>
             <technique_common>
@@ -2433,7 +2433,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_010" name="building_floor.010" type="NODE">
-        <matrix sid="transform">1 0 0 7 0 1 0 7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 7 0 0 1 0 0 -1 0 -7 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.010">
           <bind_material>
             <technique_common>
@@ -2445,7 +2445,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_009" name="building_floor.009" type="NODE">
-        <matrix sid="transform">1 0 0 5 0 1 0 7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 5 0 0 1 0 0 -1 0 -7 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.009">
           <bind_material>
             <technique_common>
@@ -2457,7 +2457,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_010" name="building_straight.010" type="NODE">
-        <matrix sid="transform">-4.37114e-8 1 0 13 -1 -4.37114e-8 0 7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 1 0 13 0 0 1 0 1 4.37114e-8 0 -7 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.010">
           <bind_material>
             <technique_common>
@@ -2469,7 +2469,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_009" name="building_straight.009" type="NODE">
-        <matrix sid="transform">-4.37114e-8 -1 0 3 1 -4.37114e-8 0 7 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 -1 0 3 0 0 1 0 -1 4.37114e-8 0 -7 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.009">
           <bind_material>
             <technique_common>
@@ -2481,7 +2481,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_008" name="building_floor.008" type="NODE">
-        <matrix sid="transform">1 0 0 11 0 1 0 9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 11 0 0 1 0 0 -1 0 -9 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.008">
           <bind_material>
             <technique_common>
@@ -2493,7 +2493,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_007" name="building_floor.007" type="NODE">
-        <matrix sid="transform">1 0 0 9 0 1 0 9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 9 0 0 1 0 0 -1 0 -9 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.007">
           <bind_material>
             <technique_common>
@@ -2505,7 +2505,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_006" name="building_floor.006" type="NODE">
-        <matrix sid="transform">1 0 0 7 0 1 0 9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 7 0 0 1 0 0 -1 0 -9 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.006">
           <bind_material>
             <technique_common>
@@ -2517,7 +2517,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_005" name="building_floor.005" type="NODE">
-        <matrix sid="transform">1 0 0 5 0 1 0 9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 5 0 0 1 0 0 -1 0 -9 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.005">
           <bind_material>
             <technique_common>
@@ -2529,7 +2529,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_008" name="building_straight.008" type="NODE">
-        <matrix sid="transform">-4.37114e-8 1 0 13 -1 -4.37114e-8 0 9 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 1 0 13 0 0 1 0 1 4.37114e-8 0 -9 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.008">
           <bind_material>
             <technique_common>
@@ -2541,7 +2541,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_004" name="building_floor.004" type="NODE">
-        <matrix sid="transform">1 0 0 11 0 1 0 11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 11 0 0 1 0 0 -1 0 -11 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.004">
           <bind_material>
             <technique_common>
@@ -2553,7 +2553,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_003" name="building_floor.003" type="NODE">
-        <matrix sid="transform">1 0 0 9 0 1 0 11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 9 0 0 1 0 0 -1 0 -11 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.003">
           <bind_material>
             <technique_common>
@@ -2565,7 +2565,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_002" name="building_floor.002" type="NODE">
-        <matrix sid="transform">1 0 0 7 0 1 0 11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 7 0 0 1 0 0 -1 0 -11 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.002">
           <bind_material>
             <technique_common>
@@ -2577,7 +2577,7 @@
         </instance_geometry>
       </node>
       <node id="building_floor_001" name="building_floor.001" type="NODE">
-        <matrix sid="transform">1 0 0 5 0 1 0 11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 5 0 0 1 0 0 -1 0 -11 0 0 0 1</matrix>
         <instance_geometry url="#building_floor_mesh-mesh" name="building_floor.001">
           <bind_material>
             <technique_common>
@@ -2589,7 +2589,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_001" name="building_straight.001" type="NODE">
-        <matrix sid="transform">-4.37114e-8 -1 0 3 1 -4.37114e-8 0 11 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 -1 0 3 0 0 1 0 -1 4.37114e-8 0 -11 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.001">
           <bind_material>
             <technique_common>
@@ -2601,7 +2601,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_006" name="building_straight.006" type="NODE">
-        <matrix sid="transform">1 0 0 11 0 1 0 13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 11 0 0 1 0 0 -1 0 -13 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.006">
           <bind_material>
             <technique_common>
@@ -2613,7 +2613,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_005" name="building_straight.005" type="NODE">
-        <matrix sid="transform">1 0 0 9 0 1 0 13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 9 0 0 1 0 0 -1 0 -13 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.005">
           <bind_material>
             <technique_common>
@@ -2625,7 +2625,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_004" name="building_straight.004" type="NODE">
-        <matrix sid="transform">1 0 0 7 0 1 0 13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 7 0 0 1 0 0 -1 0 -13 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.004">
           <bind_material>
             <technique_common>
@@ -2637,7 +2637,7 @@
         </instance_geometry>
       </node>
       <node id="building_straight_003" name="building_straight.003" type="NODE">
-        <matrix sid="transform">1 0 0 5 0 1 0 13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 5 0 0 1 0 0 -1 0 -13 0 0 0 1</matrix>
         <instance_geometry url="#building_straight_mesh-mesh" name="building_straight.003">
           <bind_material>
             <technique_common>
@@ -2649,7 +2649,7 @@
         </instance_geometry>
       </node>
       <node id="building_corner_002" name="building_corner.002" type="NODE">
-        <matrix sid="transform">-4.37114e-8 1 0 13 -1 -4.37114e-8 0 13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">-4.37114e-8 1 0 13 0 0 1 0 1 4.37114e-8 0 -13 0 0 0 1</matrix>
         <instance_geometry url="#building_corner_mesh-mesh" name="building_corner.002">
           <bind_material>
             <technique_common>
@@ -2661,7 +2661,7 @@
         </instance_geometry>
       </node>
       <node id="building_corner_001" name="building_corner.001" type="NODE">
-        <matrix sid="transform">1 0 0 3 0 1 0 13 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">1 0 0 3 0 0 1 0 0 -1 0 -13 0 0 0 1</matrix>
         <instance_geometry url="#building_corner_mesh-mesh" name="building_corner.001">
           <bind_material>
             <technique_common>

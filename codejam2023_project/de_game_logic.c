@@ -38,28 +38,43 @@ void de_camera_component_render_func(de_scene_t* scene, de_renderer_t* renderer,
 void de_script_component_create_func(de_scene_t* scene, de_object_t* object, void* comp) {
 	de_script_t* script = (de_script_t*)comp;
 	if (script->on_create) {
-		de_scripting_call_no_args(script->L, script->on_create, object);
+		wrenEnsureSlots(script->vm, 3);
+		wrenSetSlotHandle(script->vm, 0, script->receiver);
+		wrenSetSlotHandle(script->vm, 2, script->object_class);
+		
+		de_object_t** obj_ptr = (de_object_t**)wrenSetSlotNewForeign(script->vm, 1, 2, sizeof(de_object_t*));
+		*obj_ptr = object;
+	
+		wrenCall(script->vm, script->on_create);
 	}
 }
 
 void de_script_component_update_func(de_scene_t* scene, de_object_t* object, void* comp, float delta) {
 	de_script_t* script = (de_script_t*)comp;
 	if (script->on_update) {
-		de_scripting_call_float_arg(script->L, script->on_update, delta, object);
-	}
-}
+		wrenEnsureSlots(script->vm, 4);
+		wrenSetSlotHandle(script->vm, 0, script->receiver);
+		wrenSetSlotHandle(script->vm, 3, script->object_class);
 
-void de_script_component_render_func(de_scene_t* scene, de_renderer_t* renderer, de_object_t* object, void* comp) {
-	de_script_t* script = (de_script_t*)comp;
-	if (script->on_draw) {
-		de_scripting_call_no_args(script->L, script->on_draw, object);
+		de_object_t** obj_ptr = (de_object_t**)wrenSetSlotNewForeign(script->vm, 1, 3, sizeof(de_object_t*));
+		*obj_ptr = object;
+
+		wrenSetSlotDouble(script->vm, 2, (double) delta);
+		wrenCall(script->vm, script->on_update);
 	}
 }
 
 void de_script_component_destroy_func(de_scene_t* scene, de_object_t* object, void* comp) {
 	de_script_t* script = (de_script_t*)comp;
 	if (script->on_destroy) {
-		de_scripting_call_no_args(script->L, script->on_destroy, object);
+		wrenEnsureSlots(script->vm, 3);
+		wrenSetSlotHandle(script->vm, 0, script->receiver);
+		wrenSetSlotHandle(script->vm, 2, script->object_class);
+
+		de_object_t** obj_ptr = (de_object_t**)wrenSetSlotNewForeign(script->vm, 1, 2, sizeof(de_object_t*));
+		*obj_ptr = object;
+
+		wrenCall(script->vm, script->on_destroy);
 	}
 }
 

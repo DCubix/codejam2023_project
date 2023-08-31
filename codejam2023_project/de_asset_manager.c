@@ -373,11 +373,10 @@ void de_assets_load_scene(de_game_t* game, const char* name, const char* file_pa
                 const char* file_path = smol_xml_get_attr(comp_node, "value");
                 SMOL_ASSERT(file_path != NULL);
 
-                de_script_t* script = de_scripting_run_script(game->L, file_path);
+                de_script_t* script = de_scripting_run_script(game->vm, file_path);
                 de_component_t comp = { 0 };
                 comp.create_func = de_script_component_create_func;
                 comp.update_func = de_script_component_update_func;
-                comp.render_func = de_script_component_render_func;
                 comp.destroy_func = de_script_component_destroy_func;
                 comp.free_func = NULL;
                 comp.data = script;

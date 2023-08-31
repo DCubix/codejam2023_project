@@ -99,6 +99,16 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)LuaAutoC;$(IncludePath)</IncludePath>
+    <CustomBuildBeforeTargets>
+    </CustomBuildBeforeTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)LuaAutoC;$(IncludePath)</IncludePath>
+    <CustomBuildBeforeTargets>
+    </CustomBuildBeforeTargets>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -138,6 +148,18 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PreBuildEvent>
+      <Command>python $(ProjectDir)prebuild.py "$(ProjectDir)"</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>Generating WREN include files</Message>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>
+      </Message>
+      <Command>
+      </Command>
+    </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Emscripten'">
     <ClCompile>
@@ -169,6 +191,18 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PreBuildEvent>
+      <Command>python $(ProjectDir)prebuild.py "$(ProjectDir)"</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>Generating WREN include files</Message>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>
+      </Message>
+      <Command>
+      </Command>
+    </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Emscripten'">
     <ClCompile>
@@ -196,11 +230,13 @@
     <ClCompile Include="de_renderer.c" />
     <ClCompile Include="de_scripting.c" />
     <ClCompile Include="external\glad\glad.c" />
+    <ClCompile Include="external\wren.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="smol_libs.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="de_asset_manager.h" />
+    <ClInclude Include="de_binding.h" />
     <ClInclude Include="de_game.h" />
     <ClInclude Include="de_game_logic.h" />
     <ClInclude Include="de_renderer.h" />
@@ -213,16 +249,13 @@
     <ClInclude Include="external\smol\smol_math.h" />
     <ClInclude Include="external\smol\smol_utils.h" />
     <ClInclude Include="external\smol\smol_xml.h" />
+    <ClInclude Include="external\wren.h" />
     <ClInclude Include="opengl.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\assets\basic.frag" />
     <None Include="..\assets\basic.vert" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Lua\Lua.vcxproj">
-      <Project>{0f61d377-b951-4ab0-a77d-e96986d70652}</Project>
-    </ProjectReference>
+    <None Include="prebuild.py" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

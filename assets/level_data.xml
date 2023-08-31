@@ -198,7 +198,7 @@
     <object tag="" ref="building_window.008" />
     <object tag="monke" ref="Suzanne">
         <components>
-            <component type="SCRIPT" value="scripts/test.lua" />
+            <component type="SCRIPT" value="scripts/test.wren" />
         </components>
         <properties>
             <prop type="STRING" name="name" value="Monke" />
